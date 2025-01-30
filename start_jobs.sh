@@ -17,7 +17,7 @@ output_path=/proj/naiss2024-23-57/C57_female_lineage_microbiota/assembled_metage
 
 for suffix in cecum_samples last_feces; do
     for F in $(cat $input_main_path/$suffix/trimmed_host_removed/trimmed.files); do
-        squeue -n 1 $F ./assembling_metagenomes_array.sh
+        sbatch -n 1 $F ./assembling_metagenomes_array.sh
     done
 done
 
