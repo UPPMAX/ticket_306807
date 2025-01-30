@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH -A uppmax2025-2-222
-#SBATCH -p node
-#SBATCH -N 1
-#SBATCH -t 10-00:00:00
+##SBATCH -A uppmax2025-2-222
+##SBATCH -p node
+##SBATCH -N 1
+##SBATCH -t 10-00:00:00
 ##SBATCH -J jobarray
 ##SBATCH --array=0-
-#SBATCH --mail-type=ALL,ARRAY_TASKS
+##SBATCH --mail-type=ALL,ARRAY_TASKS
 
 # SLURM_ARRAY_TASK_ID tells the script which iteration to run
 echo $SLURM_ARRAY_TASK_ID

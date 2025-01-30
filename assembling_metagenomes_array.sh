@@ -1,4 +1,8 @@
 #!/bin/bash
+#SBATCH -A uppmax2025-2-222
+#SBATCH -n 1
+#SBATCH -t 10-00:00:00
+#SBATCH --mail-type=ALL
 
 b=${1##*/} # file name
 c=${1%/*} #path to file
