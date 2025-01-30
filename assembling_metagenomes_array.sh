@@ -3,6 +3,9 @@
 b=${1##*/} # file name
 c=${1%/*} #path to file
 
+echo "Input filename: ${b}"
+echo "Input filename full path: ${c}"
+
 module load bioinfo-tools metaWRAP/1.3.2
 
 output_path=/proj/naiss2024-23-57/C57_female_lineage_microbiota/assembled_metagenomes
